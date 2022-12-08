@@ -75,6 +75,9 @@ header.nav-fixed{
     font-weight: 900;
     letter-spacing: -1px;
 }
+.navbar .navbar-brand:hover{
+    color:#dc4f72;
+}
 .navbar .navbar-collapse{
     right: 0;
     position: absolute;
