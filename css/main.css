@@ -211,10 +211,10 @@ header.nav-fixed{
     transition: 0.3s ease-out;
     display: inline-block;
     border: 1px solid transparent;
+    color:#ffffff;
 }
 
-.about__left:hover button{
-    color: #fff;
+.about__left button:hover{
     background-color: #d62f58;
     border-color: #cf2952;
 }
