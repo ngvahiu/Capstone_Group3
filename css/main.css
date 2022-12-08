@@ -248,3 +248,31 @@ header.nav-fixed{
     box-shadow: 0 0.5rem 1rem rgb(0,0,0, 0.15);
 }
 
+/* TOOLS */
+.tools__item{
+    padding: 3rem 2rem;
+    border-radius: 6px;
+    background-color: #f7f9fc;
+    border: 1px solid #f7f9fc;
+    cursor: pointer;
+    transition: all .5s;
+}
+.tools__item h3{
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #2c3038;
+}
+.tools__item p{
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24.5px;
+    color:#5a5a5a;
+}
+
+.tools__item:hover{
+    transform: translateY(-30px);
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    box-shadow:  0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
