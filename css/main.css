@@ -555,3 +555,60 @@ header.nav-fixed {
     transform: rotate(-180deg);
 }
 
+
+/* COMMIT */
+
+.commit__title h2{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.commit__info p{
+    font-size: 16px;
+    color: #eee;
+    line-height: 24.5px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.commit__info button{
+    transition: 0.3s ease-out;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0px 30px;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 5px;
+}
+
+.commit__info:hover button{
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+.commit__info a{
+    text-decoration: none;
+    color: black;
+}
+
+.commit{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../img/bg.jpeg);;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 480px;
+    display: grid;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.commit__content{
+    max-width: 550px;  
+}
