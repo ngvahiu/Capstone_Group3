@@ -619,7 +619,7 @@ header.nav-fixed {
     font-size: 46px;
 }
 
-.nav-item {
+.projects__content .nav-item {
     font-weight: 700;
     font-size: 22px;
     padding: 15px;
@@ -633,11 +633,11 @@ header.nav-fixed {
     border-bottom: 3px solid #eee;
 }
 
-.nav-item{
+.projects__content .nav-item{
     border-bottom: 3px solid #d62f58;
 }
 
-.nav-item a{    
+.projects__content .nav-item a{    
     list-style: none;
     outline: none;
     color: #4E5B61;
