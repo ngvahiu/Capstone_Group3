@@ -568,14 +568,139 @@ header.nav-fixed {
 }
 
 /* READY */
-.btn-primary{
+.btn-primary {
     color: #fff;
     background-color: #dc4f72;
     border-color: #dc4f72;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     color: #fff;
     background-color: #d62f58;
     border-color: #cf2952;
+}
+
+/* FOOTER */
+footer .footer__main {
+    background-color: #f7f9fc;
+}
+
+footer .footer__main h3 {
+    font-size: 20px;
+    line-height: 25px;
+    color: #2c3038;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+footer .footer__main h4 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #2c3038;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+footer .footer-gd-16 li {
+    display: block;
+    list-style: none;
+    margin: 10px 0;
+}
+
+footer .footer-gd-16 li a {
+    color: #656f7b;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+footer .end-column {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 6px;
+    box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+}
+
+.footer__main form {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.footer__main .subscribe input[type="email"] {
+    background: #f7f9fc;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+    width: 78%;
+    color: #2c3038;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.footer__main .subscribe button {
+    text-align: center;
+    background: #dc4f72;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 20%;
+    color: #fff;
+    border-radius: 6px;
+}
+
+footer .below-section {
+    border-top: 1px solid #eaeaea;
+}
+
+.footer__main h3 a:hover,
+.footer__main .footer-gd-16 li a:hover,
+.footer__main p a:hover {
+    opacity: 0.8;
+    color: #dc4f72;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.footer__main p a {
+    color: #2c3038;
+}
+
+.footer__main p {
+    line-height: 22px;
+    color: #5a5a5a;
+    font-size: 16px;
+}
+
+.footer__main .social li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer__main .social li a {
+    color: #2c3038;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.footer__main .social li a i {
+    font-size: 15px;
+    line-height: 36px;
+}
+
+.footer__main .social li a:hover {
+    color: #dc4f72;
+    transition: all .5s;
 }
