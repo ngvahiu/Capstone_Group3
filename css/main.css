@@ -613,7 +613,6 @@ header.nav-fixed {
 }
 
 /* PROJECTS */
-
 .projects__title h2{
     font-weight: 700;
     font-size: 46px;
@@ -633,7 +632,7 @@ header.nav-fixed {
     border-bottom: 3px solid #eee;
 }
 
-.projects__content .nav-item{
+.projects__content li:has(a.active){
     border-bottom: 3px solid #d62f58;
 }
 
@@ -699,12 +698,12 @@ header.nav-fixed {
     color: #dc4f72;
 }
 
-.project__text:hover a{
-    color: white;
-}
-
-.project__text:hover button{
+.project__text button:hover{
     background-color: #dc4f72;
     border-color: #dc4f72;
+}
+
+.project__text button:hover a{
+    color: white;
 }
 
