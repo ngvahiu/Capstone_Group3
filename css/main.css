@@ -898,3 +898,107 @@ a:hover {
 .backToTop:hover{
     color: #fff;
 }
+
+/* TESTIMONIALS */
+
+.img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    background: #f3f6f9;
+    border-radius: 50%;
+    border: 3px solid #d62f58;
+}
+
+.img img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item .text{
+    position: relative;
+}
+
+.carousel-item .text p{
+    font-size: 18px;
+    line-height: 26px;
+    color: #2C3038;
+}
+
+.carousel-item .name h4{
+    font-size: 18px;
+    color: #dc4f72;
+    font-weight: 400;
+}
+
+.carousel-item .name p{
+    font-size: 13px;
+    color: #2C3038;
+} 
+
+.carousel-item{
+    max-width: 95%;
+    margin:auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 575px;
+}
+
+.testimonials{
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+         rgba(247, 249, 252, 0.77),
+         rgba(247, 249, 252, 0.77)),
+         url(../img/testi.jpeg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.projects__title{
+    padding-top: 50px;
+}
+
+.carousel-indicators li{
+    width: 40px;
+    height: 5px;
+    margin: 5px 5px;
+    background: #dc4f72;
+    display: block;
+    border: none;
+    transition: opacity .2s ease;
+    border-radius: 0;
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto / 1fr;
+
+    margin: auto;
+    width: 50%;
+}
+
+.carousel {
+    margin-top: 0px;
+    background: none;
+    background-image: none;
+}
+
+.carousel-item{
+    display: flex;
+}
+
+.text{
+    width: 70%;
+    margin-left: 40px;
+}
