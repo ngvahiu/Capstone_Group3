@@ -898,3 +898,93 @@ a:hover {
 .backToTop:hover{
     color: #fff;
 }
+
+/* TESTIMONIALS */
+.testimonials{
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+         rgba(247, 249, 252, 0.77),
+         rgba(247, 249, 252, 0.77)),
+         url(../img/testi.jpeg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.testimonials__content .testimonials__info{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto 1fr;
+    background-color: #fff;
+    border-radius: 6px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.img-circle{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    background: #f3f6f9;
+    border-radius: 50%;
+    border: 3px solid #d62f58;
+}
+
+.img-circle img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testimonials__info .text{
+    position: relative;
+}
+
+.testimonials__info .text i{
+    font-size: 35px;
+    color:#2C3038;  
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -40px;
+}
+.testimonials__info .text p{
+    font-size: 18px;
+    line-height: 26px;
+    color: #2C3038;
+}
+
+.testimonials__info .name h4{
+    font-size: 18px;
+    color: #dc4f72;
+    font-weight: 400;
+    margin: 0;
+}
+
+.testimonials__info .name p{
+    font-size: 13px;
+    color: #2C3038;
+    margin: 0;
+} 
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 5px;
+    border-radius: 0;
+    margin: 20px 5px 5px 5px;
+    background-color: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span,
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color:#dc4f72;
+}
+
+.owl-theme .owl-dots button:focus {
+    outline: none;
+}
