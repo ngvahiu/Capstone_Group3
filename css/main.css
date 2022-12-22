@@ -222,15 +222,12 @@ header.nav-fixed {
     background-color: #f7f9fc;
 }
 
-.about .grid {
-    display: flex;
+.about .row {
     padding-top: 100px;
 }
 
 .about__left {
     text-align: left;
-    width: 70%;
-    margin-right: 80px;
 }
 
 .about__left p:first-of-type {
@@ -1227,8 +1224,8 @@ a:hover {
     }
 
     .about__right img {
-        width: 80%;
-        height: 80%;
+        width: 90%;
+        height: 90%;
     }
 }
 @media screen and (max-width:991.98px){
@@ -1251,6 +1248,12 @@ a:hover {
         position: absolute;
         right: 40px;
         top: 10px;
+    }
+    .navbar{
+        padding-bottom: 0;
+    }
+    .navbar .navbar-brand{
+        font-size: 20px;
     }
     .navbar .navbar-collapse.show{
         display: flex;
@@ -1327,13 +1330,23 @@ a:hover {
     .title h3 {
         font-size: 35px;
     }
-
+    .theme-button{
+        font-size: 10px;
+        line-height: 40px;
+    }
     .carousel__left h3{
         font-size: 30px;
         line-height: 40px;
     }
     .carousel__left p{
         font-size: 16px;
+        margin-right: 30px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .about__left button{
+        font-size: 12px;
+        padding: 12px 20px;
     }
 
     .testimonials__content .testimonials__info{
@@ -1358,7 +1371,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320.01px){
     .title p {
         font-size: 8px;
     }
@@ -1370,10 +1383,13 @@ a:hover {
         margin-right: 0 !important;
     }
     .ready__content .button a:last-child{
-        margin-top: 10px;
         margin-left: 0 !important;
     }
     
+    .solutions__blog .tag-label{
+        font-size: 8px;
+    }
+
     .footer__main .subscribe button {
         text-align: center;
     }
