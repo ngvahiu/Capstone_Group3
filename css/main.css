@@ -72,6 +72,7 @@ header {
     align-items: center;
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
+
 .fixed-top {
     position: fixed;
     top: 0;
@@ -177,7 +178,6 @@ header.nav-fixed {
 /* CAOURSEL */
 .carousel {
     margin-top: 90px;
-    background: #ffffff;
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -227,7 +227,7 @@ header.nav-fixed {
     margin-bottom: 5px;
 }
 
-.about__left h2 {
+.about__left h3 {
     font-size: 35px;
     line-height: 40px;
     color: #2c3038;
@@ -489,14 +489,14 @@ header.nav-fixed {
 
 /* COMMIT */
 
-.commit__title h2{
+.commit__title h2 {
     color: #ffffff;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
 }
 
-.commit__info p{
+.commit__info p {
     font-size: 16px;
     color: #eee;
     line-height: 24.5px;
@@ -504,7 +504,7 @@ header.nav-fixed {
     margin-bottom: 2rem;
 }
 
-.commit__info button{
+.commit__info button {
     transition: 0.3s ease-out;
     display: inline-block;
     line-height: 52px;
@@ -518,18 +518,19 @@ header.nav-fixed {
     border-radius: 5px;
 }
 
-.commit__info:hover button{
+.commit__info:hover button {
     background-color: #e2e6ea;
     border-color: #dae0e5;
 }
 
-.commit__info a{
+.commit__info a {
     text-decoration: none;
     color: black;
 }
 
-.commit{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../img/bg.jpeg);;
+.commit {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../img/bg.jpeg);
+    ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -540,8 +541,8 @@ header.nav-fixed {
     padding: 2rem 0;
 }
 
-.commit__content{
-    max-width: 550px;  
+.commit__content {
+    max-width: 550px;
 }
 
 /* QUESTIONS */
@@ -631,7 +632,7 @@ header.nav-fixed {
 }
 
 /* PROJECTS */
-.projects__title h2{
+.projects__title h2 {
     font-weight: 700;
     font-size: 46px;
 }
@@ -650,52 +651,52 @@ header.nav-fixed {
     border-bottom: 3px solid #eee;
 }
 
-.projects__content li:has(a.active){
+.projects__content li:has(a.active) {
     border-bottom: 3px solid #d62f58;
 }
 
-.projects__content .nav-item a{    
+.projects__content .nav-item a {
     list-style: none;
     outline: none;
     color: #4E5B61;
 }
 
-.nav-tabs .nav-link{
+.nav-tabs .nav-link {
     border: none;
 }
 
-.project__item{
+.project__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 30px;
 }
 
-.project__img img{
+.project__img img {
     border-radius: 6px;
 }
 
-.project__img:hover img{
+.project__img:hover img {
     transform: translateY(-10px);
     transition: all 0.5s;
 }
 
-.project__text h3{
-    color:#2c3038;
+.project__text h3 {
+    color: #2c3038;
     margin-bottom: 16px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
 }
 
-.project__text p{
+.project__text p {
     margin-bottom: 25px;
     font-size: 16px;
     line-height: 24.5px;
     color: #2c3038;
 }
 
-.project__text button{
+.project__text button {
     display: block;
     line-height: 52px;
     padding: 0 30px;
@@ -711,20 +712,109 @@ header.nav-fixed {
     margin: 40px 0px;
 }
 
-.project__text a{
+.project__text a {
     text-decoration: none;
     color: #dc4f72;
 }
 
-.project__text button:hover{
+.project__text button:hover {
     background-color: #dc4f72;
     border-color: #dc4f72;
 }
 
-.project__text button:hover a{
+.project__text button:hover a {
     color: white;
 }
 
+/* TESTIMONIALS */
+.testimonials {
+    background-size: cover;
+    background-image: linear-gradient(to right,
+            rgba(247, 249, 252, 0.77),
+            rgba(247, 249, 252, 0.77)),
+        url(../img/testi.jpeg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.testimonials__content .testimonials__info {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto 1fr;
+    background-color: #fff;
+    border-radius: 6px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.img-circle {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    background: #f3f6f9;
+    border-radius: 50%;
+    border: 3px solid #d62f58;
+}
+
+.img-circle img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testimonials__info .text {
+    position: relative;
+}
+
+.testimonials__info .text i {
+    font-size: 35px;
+    color: #2C3038;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -40px;
+}
+
+.testimonials__info .text p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #2C3038;
+}
+
+.testimonials__info .name h4 {
+    font-size: 18px;
+    color: #dc4f72;
+    font-weight: 400;
+    margin: 0;
+}
+
+.testimonials__info .name p {
+    font-size: 13px;
+    color: #2C3038;
+    margin: 0;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 5px;
+    border-radius: 0;
+    margin: 20px 5px 5px 5px;
+    background-color: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span,
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: #dc4f72;
+}
+
+.owl-theme .owl-dots button:focus {
+    outline: none;
+}
 
 /* READY */
 .btn-primary {
@@ -895,96 +985,223 @@ a:hover {
     visibility: visible;
     opacity: .7;
 }
-.backToTop:hover{
+
+.backToTop:hover {
     color: #fff;
 }
 
-/* TESTIMONIALS */
-.testimonials{
-    background-size: cover;
-    background-image: linear-gradient(
-        to right,
-         rgba(247, 249, 252, 0.77),
-         rgba(247, 249, 252, 0.77)),
-         url(../img/testi.jpeg);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+
+.btn:focus{
+    box-shadow: none;
+}
+/* Light theme */
+#myBody {
+    box-shadow: none !important;
 }
 
-.testimonials__content .testimonials__info{
-    display: grid;
-    gap: 50px;
-    grid-template-columns: auto 1fr;
-    background-color: #fff;
-    border-radius: 6px;
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 1.5rem;
+#switchButton {
+    background-color: white;
 }
 
-.img-circle{
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    overflow: hidden;
-    background: #f3f6f9;
-    border-radius: 50%;
-    border: 3px solid #d62f58;
+#switchButton .fa-sun {
+    display: none;
 }
 
-.img-circle img{
-    width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    object-position: center;
+#switchButton .fa-moon {
+    display: block;
 }
 
-.testimonials__info .text{
-    position: relative;
+
+/* Dark Theme*/
+.dark#myBody {
+    background-color: black;
 }
 
-.testimonials__info .text i{
-    font-size: 35px;
-    color:#2C3038;  
-    opacity: 0.2;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: -40px;
-}
-.testimonials__info .text p{
-    font-size: 18px;
-    line-height: 26px;
-    color: #2C3038;
+.dark #switchButton {
+    background-color: black;
 }
 
-.testimonials__info .name h4{
-    font-size: 18px;
+.dark #switchButton .fa-sun {
+    display: block;
+    color: white;
+}
+
+.dark #switchButton .fa-moon {
+    display: none;
+}
+
+.dark .title h3{
+    color: white;
+}
+.dark .title p:last-child{
+    color:rgba(255, 255, 255, 0.4);
+}
+.dark header,
+.dark header nav{
+    background: black;
+}
+
+.dark .dropdown-menu{
+    background: black;
+    border: 1px solid #333;
+}
+.dark .dropdown-menu::before{
+    background: black;
+    border: 1px solid #333;
+    border-bottom: none;
+    border-right: none;
+}
+
+.dark .navbar-expand-lg .navbar-nav .nav-link, 
+.dark .dropdown-menu .dropdown-item{
+    color: white;
+    background: black;
+}
+
+.dark .navbar-expand-lg .navbar-nav .nav-link:hover,
+.dark .dropdown-menu .dropdown-item:hover{
     color: #dc4f72;
-    font-weight: 400;
-    margin: 0;
 }
 
-.testimonials__info .name p{
-    font-size: 13px;
-    color: #2C3038;
-    margin: 0;
-} 
-
-.owl-theme .owl-dots .owl-dot span {
-    width: 40px;
-    height: 5px;
-    border-radius: 0;
-    margin: 20px 5px 5px 5px;
-    background-color: #fff;
+.dark .carousel{
+    background-image: linear-gradient(to right, black, rgba(255, 255, 255, 0.92)), url(../img/banner.jpg);
+}
+.dark .carousel__left h3{
+    color: white;
+}
+.dark .carousel__left p{
+    color:rgba(255, 255, 255, 0.4);
 }
 
-.owl-theme .owl-dots .owl-dot:hover span,
-.owl-theme .owl-dots .owl-dot.active span {
-    background-color:#dc4f72;
+.dark .tools{
+    background: #222;
 }
 
-.owl-theme .owl-dots button:focus {
-    outline: none;
+.dark .tools__item{
+    background: black;
+    border: black;
+}
+.dark .tools__item h3{
+    color: white;
+}
+.dark .tools__item p{
+    color:rgba(255, 255, 255, 0.4);
+}
+
+.dark .about{
+    background: black;
+}
+
+.dark .numbers{
+    background: #222;
+}
+.dark .numbers .info{
+    background:black;
+    border: black;
+}
+.dark .numbers .info h4{
+    color: white;
+}
+.dark .numbers .info p:last-child{
+    color:rgba(255, 255, 255, 0.4);
+}
+
+.dark .commit__title h2{
+    color:rgba(255, 255, 255, 0.6);
+}
+.dark .commit__info p{
+    color:rgba(255, 255, 255, 0.6);
+}
+
+.dark .solutions__item{
+    background-color: #222;
+    border: #222;
+}
+.dark .solutions__blog{
+    background-color: #222;
+}
+.dark .solutions__blog h4{
+    color: white;
+}
+.dark .solutions__blog p{
+    color:rgba(255, 255, 255, 0.4);
+}
+
+.dark .questions{
+    background: #222;
+}
+.dark .questions__content li {
+    background-color: black;
+    border: black;
+    color: white;
+}
+.dark .questions__content li h2{
+    color: white;
+}
+.dark .questions__content li p{
+    color:rgba(255, 255, 255, 0.4);
+}
+
+.dark .projects__content .nav-item{
+    background: black;
+    border-bottom-color:white;
+}
+.dark .projects__content .nav-item a{
+    color: white;
+}
+.dark .projects__content .nav-item a.active{
+    background: black;
+    color:#d62f58;
+}
+.dark .projects__content li:has(a.active) {
+    border-bottom: 3px solid #d62f58;
+}
+.dark .nav-tabs {
+    border-bottom: none;
+}
+.dark .project__text h3{
+    color: white;
+}
+.dark .project__text p{
+    color:rgba(255, 255, 255, 0.4);
+}
+.dark .project__text button{
+    border: none;
+}
+
+.dark .testimonials {
+    background-image: linear-gradient(to right, black, rgba(247, 249, 252, 0.77)), url(../img/testi.jpeg);
+}
+.dark .testimonials__content .testimonials__info{
+    background: black;
+}
+.dark .testimonials__info .text p{
+    color: white;
+}
+
+.dark footer .footer__main{
+    background-color: #222;
+}
+.dark footer .footer__main h3{
+    color: white;
+}
+.dark footer .footer-gd-16 li {
+    color:rgba(255, 255, 255, 0.4);
+}
+.dark footer .end-column{
+    background-color: black;
+}
+.dark .footer__main p a {
+    color: white;
+}
+.dark footer .footer__main h4 {
+    color: white;
+}
+.dark .footer__main .social li a {
+    color: white;
+}
+.dark .footer__main .social li a:hover,
+.dark .footer__main p a:hover {
+    opacity: 0.8;
+    color: #dc4f72;
 }

@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body id="myBody">
   <header class="fixed-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -69,6 +69,12 @@
             </li>
             <li class="nav-item">
               <a class="btn btn-outline-primary theme-button" href="#">Schedule a Demo</a>
+            </li>
+            <li class="nav-item mx-4">
+              <button class="btn" id="switchButton" title="Click to switch theme">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+              </button>
             </li>
           </ul>
         </div>
@@ -133,7 +139,7 @@
         <div class="about__left g-col-6">
           <div class="title">
             <p>ABOUT OUR COMPANY</p>
-            <h2>The Best Choice For Your Successful Business!</h2>
+            <h3>The Best Choice For Your Successful Business!</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam nihil totam
               reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam
               esse
@@ -341,7 +347,7 @@
     <div class="container">
       <div class="projects__title title m-auto text-center">
         <p>FEATURED CASES</p>
-        <h2>Completed Projects</h2>
+        <h3>Completed Projects</h3>
         <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
           dapibus
           nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
@@ -420,7 +426,8 @@
       <div class="title m-auto text-center">
         <p>OUR CLIENTS TESTIMONIALS</p>
         <h3>What People Say</h3>
-        <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+        <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla
+          mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
       </div>
       <div class="testimonials__content pt-4">
         <div class="owl-carousel owl-theme">
@@ -431,7 +438,9 @@
               </div>
               <div class="text">
                 <i class="fa-solid fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
+                  quaerat et.
                 </p>
                 <div class="name mt-4">
                   <h4>Isabella Mia</h4>
@@ -447,7 +456,9 @@
               </div>
               <div class="text">
                 <i class="fa-solid fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
+                  quaerat et.
                 </p>
                 <div class="name mt-4">
                   <h4>Benjamin Lucas</h4>
@@ -463,7 +474,9 @@
               </div>
               <div class="text">
                 <i class="fa-solid fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
+                  quaerat et.
                 </p>
                 <div class="name mt-4">
                   <h4>Oliver Bradley</h4>
@@ -479,7 +492,9 @@
               </div>
               <div class="text">
                 <i class="fa-solid fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
+                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
+                  quaerat et.
                 </p>
                 <div class="name mt-4">
                   <h4>William James</h4>
@@ -488,7 +503,7 @@
               </div>
             </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
   </section>
@@ -664,10 +679,9 @@
           items: 1,
           nav: true
         },
-        600: {
+        1000: {
           items: 2,
           nav: false,
-          loop: false
         }
       }
     })
@@ -691,6 +705,11 @@
       else if (D.scrollTop == 0) {
         navbar.classList.remove('nav-fixed');
       }
+    };
+
+    document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark");
+      document.querySelector("nav").classList.toggle("bg-light");
     };
   </script>
 </body>
