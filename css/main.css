@@ -1349,6 +1349,23 @@ a:hover {
         padding: 12px 20px;
     }
 
+    .project__item{
+        margin: 0;
+    }
+    .project__text h3{
+        font-size: 25px;
+        list-style: 25px;
+    }
+    .project__text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .project__text button{
+        margin: 0 0 20px 0;
+        font-size: 10px;
+        line-height: 35px;
+        padding: 0 20px;
+    }
     .testimonials__content .testimonials__info{
         grid-template-columns: 1fr;
         gap:30px;
@@ -1362,8 +1379,17 @@ a:hover {
         right: 100%;
         font-size: 25px;
     }
+
     .projects__content .nav-item{
         font-size: 14px;
+    }
+    .questions__content li h2{
+        font-size: 12px;
+    }
+    .questions__content li i{
+        font-size: 12px;
+        top: 18px;
+        transform: translateX(10px);
     }
 
     .footer__main .subscribe button {
